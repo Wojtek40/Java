@@ -9,5 +9,7 @@ public class Main {
         genericHolder.setObj("333");
         System.out.println(genericHolder.getObj());
         System.out.println(genericHolder.getObj().getClass().getSimpleName());
+
+
     }
 }
