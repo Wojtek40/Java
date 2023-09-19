@@ -9,7 +9,7 @@ public class  Car<
 
     @Override
     public int compareTo(Car car) {
-        LocalTime myObj = LocalTime.of(15, 0);//LocalTime.now();
+        LocalTime myObj = LocalTime.of(11, 0);//LocalTime.now();
 
         if(myObj.isBefore(LocalTime.NOON)){
             return masa.compareTo(car.masa);
@@ -37,6 +37,15 @@ public class  Car<
         this.marka = marka;
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "masa=" + masa +
+                ", szerokosc=" + szerokosc +
+                ", dlugosc=" + dlugosc +
+                ", marka='" + marka + '\'' +
+                '}';
+    }
 
     public Number getMasa() {
         return masa;
