@@ -33,10 +33,15 @@ public class Main {
 /*
         * Zadanie 1.3
 */
-        Compare MyComparator = new Compare();
-        MyComparator.compareValues(new Car("BMW", 100.1d, 100, 100), new Car("AUDI", 100d, 100, 100));
-        MyComparator.compareValues(new Car("BMW", 100, 101, 100), new Car("AUDI", 100, 100, 100));
-        MyComparator.compareValues(new Car("BMW", 100, 100, 999), new Car("AUDI", 100, 101, 100));
-        MyComparator.compareValues(new Car("BMW", 100.1f, 100, (byte)101), new Car("AUDI", 100.1f, 100, (byte)100));
+//        Compare MyComparator = new Compare();
+//        MyComparator.compareValues(new Car("BMW", 100.1d, 100, 100), new Car("AUDI", 100d, 100, 100));
+//        MyComparator.compareValues(new Car("BMW", 100, 101, 100), new Car("AUDI", 100, 100, 100));
+//        MyComparator.compareValues(new Car("BMW", 100, 100, 999), new Car("AUDI", 100, 101, 100));
+//        MyComparator.compareValues(new Car("BMW", 100.1f, 100, (byte)101), new Car("AUDI", 100.1f, 100, (byte)100));
+        Node n4 = Nodes.create(25);
+        Node n1 = Nodes.create(48);
+
+        Node n5 = Nodes.link(n1, n4);
+        Node n6 = Nodes.link(Nodes.create(10), Nodes.create(20));
     }
 }
